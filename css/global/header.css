@@ -1,0 +1,24 @@
+.header-bg {
+  background-image: linear-gradient(var(--cor-5), var(--cor-4));
+  color: var(--cor-2);
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 20px 0px;
+}
+
+.header h1 {
+  color: var(--cor-1);
+}
+
+@media (max-width: 425px) {
+  .header ul {
+    gap: 20px;
+    justify-content: center;
+  }
+
+}

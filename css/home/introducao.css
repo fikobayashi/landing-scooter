@@ -1,0 +1,84 @@
+.conteudo .central {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.conteudo .aviso {
+  padding: 40px;
+  border: 10px dashed var(--cor-3);
+  border-radius: 10px;
+  color: var(--cor-2);
+  max-width: 500px;  
+  margin-bottom: 20px;
+  transform: rotate(30deg);
+}
+
+.introducao-banner h2 {
+  color: var(--cor-0);
+}
+
+.introducao-banner .premio {
+  font-family: Roboto;
+  font-weight: 600;
+  color: var(--cor-3);
+}
+
+.introducao-banner .data {
+  color: var(--cor-1);
+}
+
+.introducao-banner {
+  display: grid;
+  padding: 40px;
+  border-right: 2px solid var(--cor-2);
+  border-bottom: 2px solid var(--cor-2);
+  border-radius: 0 0 110px 0;
+  max-width: 800px;
+  background: var(--cor-5);
+  margin-left: 0;
+}
+
+.introducao-envio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.introducao-descricao {
+  margin-top: 20px;
+}
+
+.introducao-descricao h3 {
+  font-family: Roboto;
+  line-height: 1;
+  color: var(--cor-2);
+}
+
+.introducao-descricao span {
+  font-family: Roboto;
+  font-weight: 600;
+  color: var(--cor-3);
+}
+
+.introducao-cliente {
+  line-height: 1.8;
+  font-family: Poppins;
+  color: var(--cor-2);
+}
+
+@media (max-width: 425px) {
+  .conteudo .central .aviso span {
+    font-size: 2rem;
+  }
+  .introducao-banner {
+    padding: 20px;
+  }
+  .introducao-banner span.premio{
+    font-size: 2rem;
+  }
+  .introducao-envio {
+    grid-template-columns: 1fr;
+  }
+
+}
